@@ -69,8 +69,10 @@ public class EasyLinkedIn {
 
 	}
 
+	static Callback authCallback;
 	public void authorize(Context context, Callback callback) {
 
+		authCallback = callback;
 		Intent intent = new Intent(context, EasyLinkedInAuthActivity.class);
 		context.startActivity(intent);
 	}

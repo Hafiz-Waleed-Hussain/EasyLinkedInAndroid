@@ -187,6 +187,7 @@ public class EasyLinkedInAuthActivity extends Activity {
 			}
 			dismissDialog();
 			finish();
+			EasyLinkedIn.authCallback.onSucess("Success");
 		}
 
 		@Override
@@ -194,6 +195,7 @@ public class EasyLinkedInAuthActivity extends Activity {
 
 			dismissDialog();
 			finish();
+			EasyLinkedIn.authCallback.onSucess("Fail");
 
 		}
 	};
